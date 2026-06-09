@@ -1,13 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Form-interactive</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Form-interactive</title>
+    </head>
+    <body>
+        <form action="" class="form" autocomplete="off">
+            <h1>Register</h1>
+            <div class="form-group">
+                <label class="form-label" for="profile-picture">Profile picture</label>
+                <label for="profile-picture" class="form-avt">
+                    <img width="200" 
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" 
+                    alt="" class="avt-img">
+                </label>
+                <input accept="image/*" type="file" id="profile-picture" hidden>
+            </div>
+
+            <div class="form-group">
+                <label for="name" class="form-label required">Display Name</label>
+                <input class="forminput" type="text" id="name" name="name" placeholder="your name..." spellcheck="false" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label required">Email</label>
+                <input class="forminput" type="email" id="email" name="email" placeholder="your email... " spellcheck="false" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone" class="form-label required">Phone Number</label>
+                <input class="forminput" type="tel" id="phone" name="phone" placeholder="your phone.." spellcheck="false" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="form-label required">Password</label>
+                <input class="forminput" type="password" id="password" name="password" placeholder="your password.." required>
+            </div>
+
+            <div class="form-group">
+                <label for="Confirm-password" class="form-label required">Confirm Password</label>
+                <input class="forminput" type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password.." required>
+            </div>
+
+            <div class="form-group">            
+                <label class="form-label" for=""> Gender</label>
+                <div class="list-gender">
+                    <label> 
+                        <input type="radio" name="gender">
+                        <span>Males</span>
+                    </label>
+                    <label> 
+                        <input type="radio" name="gender">
+                        <span>Female</span>
+                    </label>
+                    <label> 
+                        <input type="radio" name="gender">
+                        <span>Other</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="date-of-birth" class="form-label">Date of Birth</label>
+                <input class="forminput" type="date" id="date-of-birth" placeholder="your phone..">
+            </div>
+
+            <div class="form-group">
+                <label for="address" class="form-label">Address</label>
+                <input class="forminput" type="text" id="address" name="address" placeholder="Address..." spellcheck="false">
+            </div>
+
+            
+            <label class="form-label" for="">Communication Preferences</label>
+            <div class="list-vertical">
+                <label> 
+                    <input type="checkbox">
+                    <span>Subscribe to Newsletter</span>
+                </label>
+                <label> 
+                    <input type="checkbox">
+                    <span>Receive Promotional Emails</span>
+                </label>
+                <label> 
+                    <input type="checkbox">
+                    <span>Get Product Update</span>
+                </label>
+            </div>
+            <button class="form-btn">Submit</button>
+        </form>
+    </body>
 </html>
