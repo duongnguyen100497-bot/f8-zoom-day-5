@@ -197,3 +197,111 @@ body{
     margin-left: 5px;
     color: red;
 }
+
+/* pricing-table */
+.container{
+    max-width: 100vw;
+    max-height: 100vh;
+    margin: 3rem 2rem;
+    background-color: #fff;
+    font-size: 62.5%;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+}
+
+.container h1{
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #e5a80d;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@supports(background-clip: text) or (-webkit-background-clip: text){
+   .container h1{
+        background-color: #020024;
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 17%, rgba(0, 207, 252, 1) 70%, rgba(0, 212, 255, 1) 100%);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+}
+
+.pricing{
+    max-width: 100%;
+    font-size: 0;
+}
+
+.card{
+    display: inline-block;
+    width: calc((100% - 2rem ) / 3);
+    font-size: 1.4rem;
+    vertical-align: top;
+    padding: 1rem;
+    border: 1px solid black;
+    min-height: 21rem;
+    margin: 15px 1rem 15px 0;
+    border-radius: 15px;
+    
+}
+
+.card:last-child{
+    margin-right: 0;
+}
+
+.badge{
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 1.5rem;
+    margin-bottom: 0.5rem;
+    background: #2A7B9B;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 0.5) 0%, rgba(87, 199, 133, 0.5) 33%, rgba(237, 221, 83, 0.5) 100%);    
+}
+
+h2.cost{
+    margin-bottom: 0.5rem;
+}
+
+.cost span{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.desc{
+    margin: 1rem 0;
+}
+
+.card .btn{
+    text-align: center;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: #e8e6e6;
+}
+.features{
+    margin: 0.5rem 0 2rem 2rem;
+    list-style: none;
+}
+
+.features li{
+    margin: 0.1rem 0;
+    color: #5e5d5d;
+}
+.card:nth-child(2){
+    box-shadow: 0 15px 20px rgba(15, 192, 89, 0.6);
+    transform: translateY(-10px);
+    border: 2px solid green;
+}
+
+.card:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+}
+
+.features li::before{
+    content: "✓";
+    padding-right: 0.5rem;
+}
+
