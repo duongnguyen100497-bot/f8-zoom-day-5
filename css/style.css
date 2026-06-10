@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html{
+    font-size: 62.5%;
+}
+
 body{
     background-color: rgb(93, 129, 205);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -204,7 +209,6 @@ body{
     max-height: 100vh;
     margin: 3rem 2rem;
     background-color: #fff;
-    font-size: 62.5%;
     border-radius: 15px;
     padding: 0.5rem 1rem;
 }
@@ -305,3 +309,145 @@ h2.cost{
     padding-right: 0.5rem;
 }
 
+/* blog-post */
+.container-blog{
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 4rem;
+}
+
+.container-blog h1{
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #e5a80d;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1.5rem 0;
+}
+
+@supports(background-clip: text) or (-webkit-background-clip: text){
+   .container-blog h1{
+        background-color: #020024;
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 17%, rgba(0, 207, 252, 1) 70%, rgba(0, 212, 255, 1) 100%);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+}
+
+.image{
+    width: 100%;
+    height: 40rem;
+    box-shadow: 0 15px 20px rgba(13, 14, 13, 0.4);
+    border-radius: 15px;
+}
+
+.image img{
+    height: 35rem;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.image figcaption{
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+    color: #3e3d3d;
+    font-style: italic;
+}
+
+.content p, ul{
+    margin: 0.5rem 0;
+    line-height: 1.6;
+    font-size: 1.6rem;
+}
+
+.introduce p{
+    padding: 0;
+}
+
+.introduce p:first-child::first-letter {
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.content-box{
+    margin: 2rem 1rem;
+}
+
+.content-box h2, .comment h2{
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+
+.content-box li{
+    margin-left: 4rem;
+}
+
+.comment::before{
+    display: inline-block;
+    content: "";
+    border-top: 3px solid black;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.comment-box:nth-of-type(odd){
+    background-color: rgba(170, 227, 251, 0.3);
+}
+ .comment-box{
+    font-size: 1.6rem;
+    margin: 1rem;
+    line-height: 1.6;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 1rem;
+ }
+
+ .comment-box h3{
+    display: inline;
+    font-weight: 500;
+ }
+
+ .comment-box span{
+    font-style: italic;
+ }
+
+ .comment-box:hover{
+    background-color: #686868;
+    color: white;
+ }
+ .content p::first-line {
+  text-decoration: underline;
+  background-color: rgb(213, 251, 213);
+}
+
+.container-blog::selection {
+  color: rgb(247, 11, 11);
+  background: rgb(237, 250, 190);
+}
+
+.content-box blockquote{
+    font-size: 1.6rem;
+    font-style: italic;
+    color: #323030;
+    padding: 0 0.5rem;
+    line-height: 1.4;
+}
+
+blockquote::before{
+    content: "\201C";
+    color: black;
+    font-size: 3rem;
+
+}
+
+.container-blog :is(h2, h3):not(h1){
+    color: rgb(246, 102, 13);
+}
