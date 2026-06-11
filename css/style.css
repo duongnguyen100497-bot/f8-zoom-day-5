@@ -118,7 +118,7 @@ body{
 }
 
 .form:focus-within{
-    border: 5px solid blue;
+    outline: 5px solid blue;
 }
 
 .form h1{
@@ -162,7 +162,7 @@ body{
     outline: none;
 }
 
-.forminput:invalid{
+.forminput:focus:invalid{
     border: 2px solid red;;
 }
 .list-gender> label{
@@ -372,8 +372,11 @@ h2.cost{
 }
 
 .introduce p:first-child::first-letter {
-  font-size: 200%;
+  font-size: 300%;
   font-weight: bold;
+  float: left;
+  line-height: 1;
+  margin-right: 8px;
 }
 
 .content-box{
